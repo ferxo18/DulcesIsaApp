@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+   >
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lv_datospedido"
+    android:layout_below="@+id/logo"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    />
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnregresar"
+    android:layout_below="@id/titulo"
+    android:text="Regresar"
+    android:onClick="regresar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsalir"
+        android:layout_below="@id/titulo"
+        android:layout_toRightOf="@id/btnregresar"
+        android:text="Salir"
+        android:onClick="salir"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Pedidos  "
+        android:textStyle="bold"
+        android:id="@+id/titulo"
+        android:textAlignment="center"
+        android:textColor="#18C90D"
+        android:textSize="30dp"
+
+
+        />
+
+    <ImageView android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/titulo"
+        />
+
+
+</RelativeLayout>

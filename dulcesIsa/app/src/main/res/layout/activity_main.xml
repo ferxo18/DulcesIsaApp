@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Pedidos  "
+        android:textStyle="bold"
+        android:id="@+id/titulo"
+        android:textAlignment="center"
+        android:textColor="#18C90D"
+        android:textSize="30dp"
+
+
+        />
+
+    <ImageView android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/titulo"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnfecha"
+        android:layout_below="@+id/titulo"
+        android:text="Fecha"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:layout_toRightOf="@+id/btnfecha"
+        android:layout_below="@+id/titulo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnhora"
+        android:layout_below="@+id/btnfecha"
+        android:text="Hora"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hora"
+        android:layout_toRightOf="@+id/btnhora"
+        android:layout_below="@+id/fecha"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Cliente: "
+        android:textStyle="bold"
+        android:id="@+id/ncliente"
+       android:layout_below="@id/btnhora"
+        android:textColor="#18C90D"
+        android:textSize="20dp"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cliente"
+        android:layout_below="@+id/ncliente"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion del Dulce: "
+        android:textStyle="bold"
+        android:id="@+id/des"
+        android:layout_below="@id/telefono"
+        android:textColor="#18C90D"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/descripcion"
+        android:layout_below="@+id/des"
+        android:inputType="text|textImeMultiLine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo y Precio: "
+        android:textStyle="bold"
+        android:id="@+id/tip"
+        android:layout_below="@id/descripcion"
+        android:textColor="#18C90D"
+        android:textSize="20dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/btnguardar"
+        android:onClick="guardar"
+        android:layout_below="@+id/spinner"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:id="@+id/btnsiguiente"
+        android:onClick="siguiente"
+        android:layout_below="@+id/spinner"
+        android:layout_toRightOf="@+id/btnguardar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono Cliente: "
+        android:textStyle="bold"
+        android:id="@+id/tel"
+        android:layout_below="@id/cliente"
+        android:textColor="#18C90D"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefono"
+        android:layout_below="@+id/tel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsalir"
+        android:layout_below="@id/spinner"
+        android:layout_toRightOf="@id/btnsiguiente"
+        android:text="Salir"
+        android:onClick="salir"/>
+
+
+
+</RelativeLayout>
